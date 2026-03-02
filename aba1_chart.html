@@ -49,6 +49,9 @@ var spec = {
       }
     ],
     "x": {
+      "axis": {
+        "tickCount": 24
+      },
       "field": "qh",
       "scale": {
         "domain": [
@@ -56,34 +59,30 @@ var spec = {
           96
         ]
       },
-      "title": "Quarter-hour (1\u201396)",
+      "title": "Quarter-hour (1-96)",
       "type": "quantitative"
     },
     "y": {
       "field": "mwh",
       "scale": {
-        "zero": true
+        "domain": [
+          0,
+          0.035
+        ]
       },
       "title": "MWh",
       "type": "quantitative"
     }
   },
   "height": 350,
-  "params": [
-    {
-      "name": "param_1e9efca18e7a2868",
-      "select": {
-        "type": "interval",
-        "encodings": [
-          "x",
-          "y"
-        ]
-      },
-      "bind": "scales"
-    }
-  ],
+  "padding": {
+    "left": 60,
+    "right": 20,
+    "top": 30,
+    "bottom": 40
+  },
   "title": "ABA1 \u2014 MWh by quarter-hour",
-  "width": 800,
+  "width": 700,
   "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
   "datasets": {
     "data-4821f756f440625cd2dc7af513b73227": [
