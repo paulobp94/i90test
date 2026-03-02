@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-  <style>body { margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.21.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
+<style>
+html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; }
+#chart { width: 100%; height: 100%; }
+</style>
 </head>
 <body>
-  <div id="chart"></div>
-  <script>
+<div id="chart"></div>
+<script>
 var spec = {
   "config": {
     "view": {
@@ -82,8 +87,7 @@ var spec = {
     "bottom": 40
   },
   "title": "ABA1 \u2014 MWh by quarter-hour",
-  "width": 700,
-  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "datasets": {
     "data-4821f756f440625cd2dc7af513b73227": [
       {
@@ -663,9 +667,10 @@ var spec = {
         "qh": 96
       }
     ]
-  }
+  },
+  "width": "container"
 };
-vegaEmbed('#chart', spec, {actions: false}).catch(console.error);
-  </script>
+vegaEmbed('#chart', spec, {actions: false, renderer: 'svg'}).catch(console.error);
+</script>
 </body>
 </html>
