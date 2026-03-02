@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <style>body { margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }</style>
+</head>
+<body>
+  <div id="chart"></div>
+  <script>
+var spec = {
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "name": "data-4821f756f440625cd2dc7af513b73227"
+  },
+  "mark": {
+    "type": "line",
+    "interpolate": "monotone",
+    "point": true
+  },
+  "encoding": {
+    "color": {
+      "field": "offer_type",
+      "title": "Offer type",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "unit",
+        "type": "nominal"
+      },
+      {
+        "field": "offer_type",
+        "type": "quantitative"
+      },
+      {
+        "field": "qh",
+        "type": "quantitative"
+      },
+      {
+        "field": "mwh",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "qh",
+      "scale": {
+        "domain": [
+          1,
+          96
+        ]
+      },
+      "title": "Quarter-hour (1\u201396)",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "mwh",
+      "title": "MWh",
+      "type": "quantitative"
+    }
+  },
+  "height": 350,
+  "params": [
+    {
+      "name": "param_1e9efca18e7a2868",
+      "select": {
+        "type": "interval",
+        "encodings": [
+          "x",
+          "y"
+        ]
+      },
+      "bind": "scales"
+    }
+  ],
+  "title": "ABA1 \u2014 MWh by quarter-hour",
+  "width": 800,
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
+  "datasets": {
+    "data-4821f756f440625cd2dc7af513b73227": [
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 1
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 2
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 3
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 4
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 5
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 6
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 7
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 8
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 9
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 10
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 11
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 12
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 13
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 14
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 15
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 16
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 17
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 18
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 19
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 20
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 21
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 22
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 23
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 24
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 25
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 26
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 27
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 28
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 29
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 30
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 31
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 32
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 33
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 34
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 35
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 36
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 37
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 38
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 39
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 40
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 41
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 42
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 43
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 44
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 45
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 46
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 47
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 48
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 49
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 50
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 51
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 52
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 53
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 54
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 55
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 56
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 57
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 58
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 59
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 60
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 61
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 62
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 63
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 64
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 65
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 66
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 67
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 68
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 69
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 70
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 71
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 72
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 73
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 74
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 75
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 76
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 77
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 78
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 79
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 80
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 81
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 82
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 83
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 84
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 85
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 86
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 87
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 88
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 89
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 90
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 91
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 92
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 93
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 94
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 95
+      },
+      {
+        "unit": "ABA1",
+        "offer_type": 1,
+        "mwh": 0.025,
+        "qh": 96
+      }
+    ]
+  }
+};
+vegaEmbed('#chart', spec, {actions: false}).catch(console.error);
+  </script>
+</body>
+</html>
